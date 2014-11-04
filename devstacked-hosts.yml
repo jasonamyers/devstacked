@@ -7,6 +7,6 @@ hosts:
     private_ip: 192.168.57.20
     memory: 4096
     ports:
-          - guest: 80
-            host: 8080
-            protocol: tcp
+      - guest: 80
+        host: 8080
+        protocol: tcp
