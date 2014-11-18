@@ -21,7 +21,7 @@ Vagrant.configure('2') do |config|
     # Create and provision each host as defined devstacked-hosts.yml
     $env['hosts'].each do |host_name, host_config|
         config.vm.define host_name do |host|
-            host.vm.box = 'hashicorp/precise64'
+            host.vm.box = 'chef/ubuntu-14.04'
 
             host.vm.network 'private_network', :ip => host_config['private_ip']
             host.vm.host_name = "#{host_name}.local"
